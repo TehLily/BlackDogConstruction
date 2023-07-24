@@ -1,0 +1,135 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+
+ 
+   background-color: antiquewhite;
+   font-family: 'Roboto Serif',"Times New Roman",serif;
+   font-size: 16px;
+   color: darkblue;
+}
+
+nav {
+   display: flex;
+   background-color:cadetblue;
+   
+}
+
+nav a {
+   color: navy;   
+   text-decoration: none;
+}
+
+nav a:hover {
+   background-color: darkkhaki;
+}
+
+.active {
+  background-color: yellow;
+}
+
+
+h1 {
+   color: black;
+   text-align:center;
+   font-size: 2.5em;
+   font-family: ;
+}
+
+h2 {
+   color: maroon;
+   text-align:center;
+   font-size: 2em;
+   font-family: ;
+}
+
+h3 {
+   color:darkgreen;
+   text-align: center;
+   font-size: 1.5em;
+   font-family: ;
+}
+
+
+.clearfix::after {
+   content: "";
+   clear: both;
+   display: table;
+}
+
+#flex-container {
+  display: flex;
+   flex-wrap: wrap;
+  
+}
+
+figure.flex-fig img {
+   width: 100%;
+   height:auto;
+}
+
+.flex-gallery {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 20px;
+}
+
+.flex-fig {
+  flex-direction: column;
+  margin: 20px;
+}
+
+.box, .active, #flex-container>p {
+  margin: 10px;
+   padding: 5px;;
+}
+
+section#flex-container {
+   flex-direction: column;
+}
+
+#banner {
+   display: flex;
+   width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+   #banner {
+      display: flex;
+      width: 60%;
+   }
+   body {
+      font-size: 22px;
+   }
+   section#flex-container {
+      align-items: flex-end;
+   }
+   .flex-fig {
+      flex: 40%;
+      flex-direction: row;
+   }
+   #credits {
+      
+      font-size: .7em;
+      text-align: right;
+      background-color: cadetblue;
+      padding: 4px;
+   }
+
+   footer {
+      float: left;
+   } 
+}  
+footer {
+   background-color: cadetblue;   
+} 
+
+#credits {
+   
+   font-size: .7em;
+   text-align: right;
+   
+}
+
